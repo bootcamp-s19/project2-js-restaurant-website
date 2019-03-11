@@ -10,13 +10,13 @@
 
 ### Stories
 
-Beth - I want to see an aesthetically pleasing website with some pictures of the menu offerings so I can visualize what I want to put on my social media page(s).
+Beth - I want to see an aesthetically pleasing website with some pictures of the menu offerings so I can visualize what I want to put on my social media page(s). Points = 4
 
-Carl - I want good descriptions of the offerings, from ingredients to maybe a hint at the techniques behind the making of them, so I can decide what I want to review.
+Carl - I want good descriptions of the offerings, from ingredients to maybe a hint at the techniques behind the making of them, so I can decide what I want to review. Points = 2
 
-Tom - I want to see pictures of the space and more importantly pictures of the clientele, so I can determine the vibe/feel of the restaurant.
+Tom - I want to see pictures of the space and more importantly pictures of the clientele, so I can determine the vibe/feel of the restaurant. Points = 5
 
-Brethren - I want to see menu pricing, as well as any specials on offer, so I can determine whether or not this is going to be a good place to hang out and not break the bank.
+Brethren - I want to see menu pricing, as well as any specials on offer, so I can determine whether or not this is going to be a good place to hang out and not break the bank. Points = 3
 
 
 
