@@ -22,8 +22,15 @@ async function loadMenuItems(num, whereTo) {
         .then(function (myJson) {
 
             for (var i = 0; i < myJson.menu_items.length; i++) {
-                app += "<div class='col-sm-3'><div class='card' id='item-" + i + "'><div class='card-body'>";
-                app += myJson.menu_items[i].description + "</div></div></div>";
+                var title1 = myJson.menu_items[i].description;
+                var arr = title1.split(" ");
+                var p = Math.floor(Math.random() * 12) + 8;
+                app += "<div class='col-sm-3'>";
+                app += "<div class='card' id='item-" + i + "'>";
+                app += "<div class='card-body'>";
+                app += "<h5 class='card-title'>" + arr[0] + " " + arr[1] + "</h5>";
+                app += "<h6 id='price' class='card-subtitle'>" + "$" + p + "</h6>";
+                app += "<p class='centered'>" + title1 + "</p>" + "</div></div></div>";
             }
             console.log(output);
             document.getElementById(whereTo).innerHTML = app;
