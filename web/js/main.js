@@ -14,7 +14,7 @@ async function loadMenu(){
 }
 
 
-
+// creating html for and fetching individual item descriptions for cards
 async function loadMenuItems(num, whereTo) {
     var app = "";
     var uri = url + num;
@@ -41,11 +41,12 @@ async function loadMenuItems(num, whereTo) {
         });
         
 }
-
+// getting the image gallery url, updating the image w x l every time to generate random image
 function getUrl(i){
     return "https://source.unsplash.com/collection/271352/25" + i + "x25" + i;
 }
 
+// creating html for image gallery
 function loadGallery(num, whereTo) {
     var pic = "";
     for (var i = 0; i < num; i++){
