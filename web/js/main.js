@@ -9,6 +9,8 @@ async function loadMenu(){
     loadMenuItems(8, "mains");
     // desserts
     loadMenuItems(8, "desserts");
+    // gallery
+    loadMenuItems(8, "gallery")
 }
 
 
@@ -25,7 +27,7 @@ async function loadMenuItems(num, whereTo) {
                 var title1 = myJson.menu_items[i].description;
                 var arr = title1.split(" ");
                 var p = Math.floor(Math.random() * 12) + 8;
-                app += "<div class='col-sm-3'>";
+                app += "<div class='col-sm-6 col-md-4 col-lg-3'>";
                 app += "<div class='card' id='item-" + i + "'>";
                 app += "<div class='card-body'>";
                 app += "<h5 class='card-title'>" + arr[0] + " " + arr[1] + "</h5>";
