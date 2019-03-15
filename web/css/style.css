@@ -5,7 +5,7 @@
     text-align:center;
 }
 .container .details{
-    border-left:3px solid #ded4da;
+    border-left:3px solid blue;
 }
 .container .details p{
     font-size:15px;
