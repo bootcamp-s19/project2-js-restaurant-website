@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Menu</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +17,9 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <header>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  
         <div class="jumbotron"
             style="background-image: url(https://previews.123rf.com/images/fermate/fermate1711/fermate171100051/89854787-taco-ingredients-as-a-frame-border-background-with-roasted-beef-tomatoe-salsa-corn-shells-avocado-he.jpg); background-size: 100%;">
             <div class="container for-about">
@@ -25,61 +27,229 @@
             </div>
         </div>
         </div>
-    </header>
+    <header>
+    
+          <li>
+            <a href="index.html" class="text-light">HOME</a>
+          </li>
+          <li>
+            <a href="" class="text-light">INFO</a>
+          </li>
+          <li>
+            <a href="onlineOrder.html" class="text-light">ORDER ONLINE</a>
+          </li>
+          <li>
+            <a href="reservations.html" class="text-light">RESERVATIONS</a>
+          </li>
+       
+      </header>
 </head>
 
-<body>
 
-    <div id="accordion" role="tablist">
-        <div class="card">
-            <div class="card-header" role="tab" id="headingOne">
-                <h5 class="mb-0">
-                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
-                    </a>
-                </h5>
-            </div>
-            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
-                data-parent="#accordion">
-                <div class="card-body">
-                    ...............................................................................#1
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" role="tab" id="headingTwo">
-                <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
-                        aria-controls="collapseTwo">
-                        Collapsible Group Item #2
-                    </a>
-                </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
-                data-parent="#accordion">
-                <div class="card-body">
-                    ...............................................................................#2
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" role="tab" id="headingThree">
-                <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
-                        aria-controls="collapseThree">
-                        Collapsible Group Item #3
-                    </a>
-                </h5>
-            </div>
-            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
-                data-parent="#accordion">
-                <div class="card-body">
-                    ...............................................................................#3
-                </div>
-            </div>
-        </div>
-    </div>
 
-</body>
+    <body onload="populateMenu()">
 
-</html>
+
+
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                  rel="stylesheet">
+              </link>
+<!-- 
+       <div id="accordion" role="tablist">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           Breakfeast before 10am
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
+                    data-parent="#accordion">
+                    <div class="card card-body" id="foods0">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods1">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods2">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods3">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods4">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods5">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods6">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods7">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods8">
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div id="accordion" role="tablist">
+                    <div class="card">
+                      <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                          <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Breakfeast before 10am
+                          </a>
+                        </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                    data-parent="#accordion">
+                    <div class="card card-body" id="foods0">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods1">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods2">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods3">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods4">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods5">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods6">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods7">
+                        </a>
+                    </div>
+                    <div class="card card-body" id="foods8">
+                        </a>
+                    </div>
+                </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
+                          <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Apps
+                          </a>
+                        </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card card-body" id="Apps0">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="Apps1">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="Apps2">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="Apps3">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="Apps4">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="Apps5">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="Apps6">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="Apps7">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="Apps8">
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
+                          <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Main Course
+                          </a>
+                        </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card card-body" id="foods0">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="mCourse0">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="mCourse1">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="mCourse2">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="mCourse5">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="mCourse5">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="mCourse6">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="mCourse7">
+                            </a>
+                        </div>
+                        <div class="card card-body" id="mCourse8">
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="card">
+                        <div class="card-header" role="tab" id="headingFour">
+                          <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Sides
+                            </a>
+                          </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordion">
+                            <div class="card card-body" id="sides0">
+                                </a>
+                            </div>
+                            <div class="card card-body" id="sides1">
+                                </a>
+                            </div>
+                            <div class="card card-body" id="sides2">
+                                </a>
+                            </div>
+                            <div class="card card-body" id="sides3">
+                                </a>
+                            </div>
+                            <div class="card card-body" id="sides4">
+                                </a>
+                            </div>
+                            <div class="card card-body" id="sides5">
+                                </a>
+                            </div>
+                            <div class="card card-body" id="sides6">
+                                </a>
+                            </div>
+                            <div class="card card-body" id="sides7">
+                                </a>
+                            </div>
+                            <div class="card card-body" id="sides8">
+                                </a>
+                            </div>
+                        </div>
+                  </div>
+                    
