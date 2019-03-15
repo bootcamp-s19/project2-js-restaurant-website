@@ -28,6 +28,49 @@ async function init(){
     updateMenu("menu4_output", menu4);
 }
 
+// this  function pulls our Array data  from our API  and converts it into a string and then saves it to data and sets it to 
+// fetchResults
+
+
+async function getMenu(id) {
+    let url = 'https://entree-f18.herokuapp.com/v1/menu/' + id;
+    var d = await fetch(url)
+    .then(status)
+    .then(json)
+    .then(function(data) {
+      console.log('Request succeeded with JSON response', data); 
+      fetchResults = data;    
+    }).catch(function(error) {
+      console.log('Request failed', error);
+    });
+
+    return fetchResults;
+}
+
+function updateMenu (menu_holder, menu){
+    var output = document.getElementById(menu_holder);
+    output.style.display = 'block';
+    var str = "<ul>";
+    for(var i = 0; i < menu.menu_items.length; i++){
+      var menu_item = menu.menu_items[i];
+      str += "<li>" + menu_item.description + "</li>";
+    }
+    str += "</ul>";
+    output.innerHTML = str;
+  }
+  
+  //
+  function status(response) {
+      if (response.status >= 200 && response.status < 300) {
+        return Promise.resolve(response)
+      } else {
+        return Promise.reject(new Error(response.statusText))
+      }
+    }
+    
+    function json(response) {
+      return response.json()
+    }
 
 
 
